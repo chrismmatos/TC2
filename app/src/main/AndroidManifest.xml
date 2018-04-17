@@ -28,6 +28,7 @@
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
+
         <service android:name=".config.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -48,13 +49,11 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <!-- <activity -->
-        <!-- android:name=".activitys.MainAct" -->
-        <!-- android:label="@string/title_activity_main" -->
-        <!-- android:theme="@style/AppTheme.NoActionBar"> -->
-
-
-        <!-- </activity> -->
+         <activity
+         android:name=".activitys.MainAct"
+         android:label="@string/title_activity_main"
+         android:theme="@style/AppTheme.NoActionBar">
+         </activity>
 
         <activity
             android:name=".activitys.LoginAct"
@@ -65,6 +64,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".activitys.PdiMainActivity"
             android:label="SafeFollowing"
@@ -84,9 +84,11 @@
         <activity
             android:name=".activitys.MapsActivity"
             android:label="@string/title_activity_maps" />
+
         <activity android:name=".activitys.AgenteAcompActivity" />
         <activity android:name=".activitys.AgenteMainActivity" />
         <activity android:name=".activitys.DialogActivity"></activity>
     </application>
+
 
 </manifest>
